@@ -10,3 +10,7 @@ In this demo, enable a user in DEV account to access S3 bucket in PROD account. 
 1. From DEV account, go to IAM Group, attach inline policy (see dev-iam-assume-role.json).  Update ARN with PROD-account-id and PROD-IAM-role.  
 1. From DEV account, login as IAM user within IAM Group.  Once logged-in, select "Switch Role".  
 1. Now the DEV account IAM user can see S3 buckets in PROD.  
+
+### References:
+* https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_cross-account-with-roles.html
+* https://aws.amazon.com/blogs/security/how-to-enable-cross-account-access-to-the-aws-management-console/
